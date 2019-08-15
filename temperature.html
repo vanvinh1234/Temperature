@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    let Temperature = function (c) {
+        this.c=c;
+        this.getCovertF=function () {
+            return (9/5)*this.c + 32;
+        };
+        this.getCovertK=function () {
+            return this.c + 273.5;
+        }
+    };
+    let temp = new Temperature(25);
+    let f = temp.getCovertF();
+    let k = temp.getCovertK();
+    alert(" do f :" + f + " do k :" + k);
+</script>
+
+</body>
+</html>
